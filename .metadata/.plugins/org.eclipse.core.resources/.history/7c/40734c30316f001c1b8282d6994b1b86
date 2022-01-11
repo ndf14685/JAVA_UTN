@@ -1,0 +1,6 @@
+
+public class SubClase07 {
+	public void name() {
+		return "Mi nombre"
+	}
+}

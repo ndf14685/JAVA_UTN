@@ -1,0 +1,27 @@
+
+public class SubClase07 {
+
+	public SubClase07() {
+		
+	}
+
+	private static String patente= "789";
+	private static String rueda= "17";
+	public static String getPatente() {
+		return patente;
+	}
+
+	public static void setPatente(String patente) {
+		SubClase07.patente = patente;
+	}
+
+	public static String getRueda() {
+		return rueda;
+	}
+
+	public static void setRueda(String rueda) {
+		SubClase07.rueda = rueda;
+	}
+	
+	
+}

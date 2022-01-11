@@ -1,0 +1,50 @@
+
+public class Clase06 {
+	public static void main(String[] args) {
+		int numero = 10; 
+		System.out.println(sumaRecursiva(numero));
+		
+		//procedimiento que hace algo
+		// no devuelve nada 
+		// en la declaracion tiene palabra void
+		//Metodo que salude
+		saludar();
+		String nombre="Pepe";
+		int dni=232323; 
+		saludarNombreMostrarDNI(nombre, dni);
+		
+		
+		
+	}
+	// Toma un numero y me suma recursivamente hasta llegar a uno
+	public static int sumaRecursiva(int numero) {
+		int resultado;
+		if(numero == 1) {
+			System.out.println(" 1 ");
+			return 1; //Caso Base o de fin de recursividad 
+		}else {
+			//System.out.print("Numero: " + numero);
+			//System.out.println("--------");
+			resultado = numero + sumaRecursiva(numero-1);
+			//System.out.println(resultado);
+		}
+		return resultado; 
+		
+	}
+	
+	public static void saludar() {
+		System.out.println("Hello world");
+	}
+	
+	public static void saludarNombreMostrarDNI(String nombre, int dni) {
+		System.out.println("Hola " + nombre + "Dni: "+ dni);
+		
+	}
+	
+	//Procedimiento que calcule area de un rectangulo (Base x Altura)
+	public static void calcularAreaRectangulo(int base, int altura) {
+		int resultado = base * altura;
+		System.out.println("El area del rectangulo es: " + resultado);
+	}
+	
+}

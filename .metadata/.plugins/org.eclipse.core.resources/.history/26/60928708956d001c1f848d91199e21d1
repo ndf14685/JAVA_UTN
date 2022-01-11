@@ -1,0 +1,18 @@
+
+public class Clase06 {
+	public static void main(String[] args) {
+		
+	}
+	// Toma un numero y me suma recursivamente hasta llegar a uno
+	public static int sumaRecursiva(int numero) {
+		int resultado;
+		if(numero == 1) {
+			return 1; //Caso Base o de fin de recursividad 
+		}else {
+			resultado = numero + sumaRecursiva(numero-1);
+		}
+		return resultado; 
+		
+	}
+	
+}

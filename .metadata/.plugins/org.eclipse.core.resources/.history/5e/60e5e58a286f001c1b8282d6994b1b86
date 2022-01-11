@@ -1,0 +1,26 @@
+
+public class Clase07 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 7 6 5 4 3 2 1
+		// Suma de Numeros 
+		int numero=7;
+		int resultado = sumaNumerosRecursivos(numero);
+		System.out.println("El resultado es: "+ resultado);
+	}
+
+	public static int sumaNumerosRecursivos(int numero) {
+		// TODO Auto-generated method stub
+		int result=1; 
+		if (numero ==1 )
+			return 1; 
+		
+		if (numero != 1)
+			result = numero + sumaNumerosRecursivos(numero-1);
+		
+		
+		return result; 
+	}
+
+}

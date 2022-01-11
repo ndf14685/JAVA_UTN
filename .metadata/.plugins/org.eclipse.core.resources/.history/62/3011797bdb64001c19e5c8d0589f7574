@@ -1,0 +1,15 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		String cantante= "Marcos";
+		String hobby= "canta";
+		System.out.println(cantante + " le gusta mucho el baile y mas cuando "+ hobby);
+		
+		int[] a = new int[0];
+		System.out.println("Resultado: "+ a.length);
+		
+		
+	}
+
+}

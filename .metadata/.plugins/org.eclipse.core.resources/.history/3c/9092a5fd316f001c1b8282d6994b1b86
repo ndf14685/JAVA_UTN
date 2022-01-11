@@ -1,0 +1,15 @@
+
+public class SubClase07 {
+
+	public static String patente= "789";
+
+	public static String getPatente() {
+		return patente;
+	}
+
+	public static void setPatente(String patente) {
+		SubClase07.patente = patente;
+	}
+	
+	
+}

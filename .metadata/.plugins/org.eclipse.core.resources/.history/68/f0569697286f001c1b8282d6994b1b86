@@ -1,0 +1,70 @@
+
+public class Clase07 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 7 6 5 4 3 2 1
+		// Suma de Numeros 
+		int numero=7;
+		int resultado = sumaNumerosRecursivos(numero);
+		System.out.println("El resultado es: "+ resultado);
+		
+		/*
+		 Explicacion de la funcion recursiva: 
+		 
+		 sumaNumerosRecursivos(7) = 7 + sumaNumerosRecursivos(6)
+		 sumaNumerosRecursivos(6) = 7 + sumaNumerosRecursivos(5)
+		 sumaNumerosRecursivos(5) = 7 + sumaNumerosRecursivos(4)
+		 sumaNumerosRecursivos(4) = 7 + sumaNumerosRecursivos(3)
+		 sumaNumerosRecursivos(3) = 7 + sumaNumerosRecursivos(2)
+		 sumaNumerosRecursivos(2) = 7 + sumaNumerosRecursivos(1)
+		 sumaNumerosRecursivos(1) = 1   ---> Caso Base que me hace salir de la recursividad
+		 Comienza a mostrar resultado
+		 sumaNumerosRecursivos(1) = 1
+		 sumaNumerosRecursivos(2) = 2 +1 = 3
+		 sumaNumerosRecursivos(3) = 3 + 3 = 6
+		 sumaNumerosRecursivos(4) = 4 + 6 = 10
+		 sumaNumerosRecursivos(5) = 5 + 10 = 15
+		 sumaNumerosRecursivos(6) = 6 + 15 = 21
+		 sumaNumerosRecursivos(7) = 7 + 21 = 28  --> Resultado Final
+		 
+		 */
+		
+		// En base a un array de numeros enteros, hacer la suma de los numeros que contiene usando recursividad
+		int[] arreglo= {1,2,4,5,8};
+		sumarArray(0, arreglo.length,arreglo);
+	}
+
+	private static int sumarArray(int inicio,int fin, int[] array) {
+		// TODO Auto-generated method stub
+		
+		int resultado; //{1,2,4,5,8}
+		//ARranco con indice inicio y (termino con indice array.lenght-1), con un valor fin
+		if (inicio==fin) {
+			//Caso base, es el pone fin a la recursividad
+			return array[inicio];
+		}else {
+			int mitad = (inicio + fin)/2;
+			int mitad1 = sumarArray(inicio, mitad, array);
+			int mitad2 = sumarArray(mitad+1, fin, array);
+			
+			return mitad1 + mitad2;
+		}
+		
+		return resultado;
+	}
+
+	public static int sumaNumerosRecursivos(int numero) {
+		// TODO Auto-generated method stub
+		int result=1; 
+		if (numero ==1 )
+			return 1; 
+		
+		if (numero != 1)
+			result = numero + sumaNumerosRecursivos(numero-1);
+		
+		
+		return result; 
+	}
+
+}

@@ -1,0 +1,6 @@
+
+public class SubClase07 {
+	public static String name() {
+		return "Mi nombre";
+	}
+}

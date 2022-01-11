@@ -1,0 +1,36 @@
+
+public class Clase05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int x = Integer.parseInt("f"); 
+		System.out.println(x);
+		
+				
+		
+		
+
+		
+		
+		
+		// Asignando valor con for a un vector
+		// Copias de un vector utilizando el System.arraycopy
+		// Foreach para con vectores
+		// ordenar el contenido de un vector
+		// Promedio de un array
+		
+		// cálculo del mayor de un array
+		// calculo del menor de un array
+		
+	    /*
+	    crear un vector de 10 posiciones
+	    pedirle al usuario que cargue 10 valores para ese vector
+	    indicar cuántos números pares y cuántos impares hay
+	    indicar cuántas veces se repitió el número 2
+	    */
+		
+		
+	}
+
+}
